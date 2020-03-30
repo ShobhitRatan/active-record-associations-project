@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 4) do
+ActiveRecord::Schema.define(version: 5) do
 
   create_table "courses", force: :cascade do |t|
     t.string "department"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 4) do
     t.integer "student_id"
     t.integer "section_id"
     t.float "grade"
+  end
+
+  create_table "faculties", force: :cascade do |t|
+    t.string "last_name"
+    t.string "first_name"
+    t.string "designation"
+    t.string "address"
+    t.string "city"
+    t.string "state"
+    t.string "country"
   end
 
   create_table "sections", force: :cascade do |t|
