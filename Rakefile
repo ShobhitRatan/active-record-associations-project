@@ -1,5 +1,5 @@
 require_relative 'config/environment.rb'
-require "sinatra/activerecord/rake"
+require 'active_record'
 
 task :environment do
   ENV["ACTIVE_RECORD_ENV"] ||= "development"
