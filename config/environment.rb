@@ -1,6 +1,6 @@
 require "bundler/setup"
 
-require "sinatra/activerecord"
+
 require 'ostruct'
 require 'date'
 
