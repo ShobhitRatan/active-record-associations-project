@@ -9,7 +9,7 @@ class CreateStudents < ActiveRecord::Migration[4.2]
             t.string :state 
             t.string :country 
             t.integer :credits 
-            t.double :gpa 
+            t.float :gpa 
         end 
     end 
 end 
